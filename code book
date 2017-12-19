@@ -1,0 +1,40 @@
+CodeBook
+This is a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data.
+Human Activity Recognition Using Smartphones Data Set .
+Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.	
+Data Set Characteristics:  	Multivariate, Time-Series	Number of Instances:	10299	Area:	Computer
+Attribute Characteristics:	N/A	Number of Attributes:	561	Date Donated	2012-12-10
+Associated Tasks:	Classification, Clustering	Missing Values?	N/A	Number of Web Hits:	574308
+
+About the data:
+For each record in the dataset it is provided: 
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
+Source:
+Jorge L. Reyes-Ortiz(1,2), Davide Anguita(1), Alessandro Ghio(1), Luca Oneto(1) and Xavier Parra(2)
+1 - Smartlab - Non-Linear Complex Systems Laboratory
+DITEN - Università degli Studi di Genova, Genoa (I-16145), Italy. 
+2 - CETpD - Technical Research Centre for Dependency Care and Autonomous Living
+Universitat Politècnica de Catalunya (BarcelonaTech). Vilanova i la Geltrú (08800), Spain
+activityrecognition '@' smartlab.ws
+
+The dataset includes the following files:
+•	'README.txt'
+•	'features_info.txt': Shows information about the variables used on the feature vector.
+•	'features.txt': List of all features.
+•	'activity_labels.txt': Links the class labels with their activity name.
+•	'train/X_train.txt': Training set.
+•	'train/y_train.txt': Training labels.
+•	'test/X_test.txt': Test set.
+•	'test/y_test.txt': Test labels.
+Transformations Used
+There are 5 parts:
+1.	Merging the training and the test sets to create one data set.
+2.	Extracting only the measurements on the mean and standard deviation for every measurement.
+3.	Using descriptive activity names to name the activities in the data set
+4.	Appropriately labels the data set with descriptive activity names.
+5.	Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
